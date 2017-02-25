@@ -1,0 +1,79 @@
+*::selection {
+	color: #fff;
+	background: #3e7cab;
+}
+
+.intro {
+	font-family: "HelveticaNeueLight", helvetica, arial, sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 1.618;
+	color: black;
+	margin-top: 0;
+}
+
+.introHeadingTwo {
+	font-family: "HelveticaNeueLight", helvetica, arial, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.618;
+	color: black;
+}
+
+.next {
+    float: right;
+    margin-right: 10px;
+}
+
+.back {
+    float: left;
+    margin-left: 10px;
+}
+
+.contactHeading {
+	font-family: "GeorgiaProW01-Light";
+	color: #4a4a4a;	
+}
+
+h1.contactHeading {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
+	margin-top: 0;
+}
+
+h2.contactHeading {
+	font-size: 28px;
+	font-weight: 100;
+	line-height: 32px;
+}
+
+p.contact {
+	font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4a4a4a;
+}
+
+a {
+	text-decoration: none;
+}
+
+.caps {
+	text-transform: uppercase;
+	color: #4a4a4a;
+	font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.phone {
+	font-family: "Open Sans", sans-serif;
+	font-size: 21px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #4a4a4a;
+	text-decoration: none;
+	outline: 0;
+}

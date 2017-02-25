@@ -1,0 +1,1125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Transamerica Jobs</title>
+		<link rel="icon" href="https://www.transamerica.com/assets/desktop/img/favicon.ico">
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/site.css" />
+		<script src= "https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/script.js"></script>	
+	</head>
+	<body>
+		<header>
+			<div id="topbar">
+				<img id="topbarimg" src="images/JobsTopHeader.png" />
+			</div>
+		</header>
+		<div id="container">
+		<img id="secondheaderimg" src="images/SecondHeader2.png" />
+		<div id="intro">
+			<img src="images/IntroImage.png" />
+		</div>
+		<div id="page">
+			<div id="application">
+			
+				<h1>Apply Online</h1>
+				<div id="dialog" title = "Required Fields">
+					<br /><p>Please fill out the required fields.</p>
+				</div>
+				<div id="finalCheck" title="Confirm">
+					<br /><p>Please confirm your application.</p>
+				</div>
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">General</a></li>
+						<li><a href="#tabs-2">Education</a></li>
+						<li><a href="#tabs-3">Previous Employment</a></li>
+						<li><a href="#tabs-4">Military Service</a></li>
+						<li><a href="#tabs-5">Confirmation</a></li>
+					</ul>
+					<div id="tabs-1">
+					<form id="generalForm">
+						<div class="table" id="general">
+							<div class="tableRow">
+								<div class="tableCell top">
+									<label>First Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="firstName" type="text" class="required"/>
+								</div>
+								<div class="tableCell">
+									<label>Address</label>
+								</div>
+								<div class="tableCell">
+									<input name="address" type="text" class="required"/>
+								</div>
+								<div class="tableCell">
+									<label>Apt</label>
+								</div>
+								<div class="tableCell">
+									<input name="unit" type="text" />
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Middle Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="mi" type="text" /><br />
+								</div>
+								<div class="tableCell">
+									<label>City</label>
+								</div>
+								<div class="tableCell">
+									<input name="city" type="text" class="required"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								
+								<div class="tableCell">
+									<label>Last Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="lastName" type="text" class="required"/>
+								</div>
+								<div class="tableCell">
+									<label>State</label>
+								</div>
+								<div class="tableCell">
+									<select name="state" id="state" class="required">
+										<option value = "ss">Select your state </option>
+										<option value="al">Alabama </option>
+										<option value="ak">Alaska </option>
+										<option value="az">Arizona </option>
+										<option value="ar">Arkansas </option>
+										<option value="ca">California </option>
+										<option value="co">Colorado </option>
+										<option value="ct">Connecticut </option>
+										<option value="de">Delaware </option>
+										<option value="fl">Florida </option>
+										<option value="ga">Georgia </option>
+										<option value="hi">Hawaii </option>
+										<option value="id">Idaho </option>
+										<option value="il">Illinois </option>
+										<option value="in">Indiana </option>
+										<option value="ia">Iowa </option>
+										<option value="ks">Kansas </option>
+										<option value="ky">Kentucky </option>
+										<option value="la">Louisiana </option>
+										<option value="me">Maine </option>
+										<option value="md">Maryland </option>
+										<option value="ma">Massachusetts </option>
+										<option value="mi">Michigan </option>
+										<option value="mn">Minnesota </option>
+										<option value="ms">Mississippi </option>
+										<option value="mo">Missouri </option>
+										<option value="mt">Montana </option>
+										<option value="ne">Nebraska </option>
+										<option value="nv">Nevada </option>
+										<option value="nh">New Hapshire </option>
+										<option value="nj">New Jersey </option>
+										<option value="nm">New Mexico </option>
+										<option value="ny">New York </option>
+										<option value="nc">North Carolina </option>
+										<option value="nd">North Dakota </option>
+										<option value="oh">Ohio </option>
+										<option value="ok">Oklahoma </option>
+										<option value="or">Oregon </option>
+										<option value="pa">Pennsylvania </option>
+										<option value="ri">Rhode Island </option>
+										<option value="sc">South Carolina </option>
+										<option value="sd">South Dakota </option>
+										<option value="tn">Tennessee </option>
+										<option value="tx">Texas </option>
+										<option value="ut">Utah </option>
+										<option value="vt">Vermont </option>
+										<option value="va">Virginia </option>
+										<option value="wa">Washington </option>
+										<option value="wv">West Virginia </option>
+										<option value="wi">Wisconsin </option>
+										<option value="wy">Wyoming </option>
+									</select>
+									<br /><label id="stateError" > </label>
+								</div>
+								<div class="tableCell">
+									<label>Zip</label>
+								</div>
+								<div class="tableCell">
+									<input name="zip" class="required digits" type="text" maxlength="5"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Phone</label>
+								</div>
+								<div class="tableCell" id="phone">
+									<input type="text" name="AreaCode" class="required digits errInline" maxlength="3" />
+									<label> - </label>
+									<input type="text" name = "First3" class="required digits errInline" maxlength="3" />
+									<label> - </label>
+									<input type="text" name = "Last4" class="required digits" maxlength="4" />
+								</div>
+								<div class="tableCell">
+									<label>Email</label>
+								</div>
+								<div class="tableCell">
+									<input name="email" type="text" class="required email" />
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Date Available</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" id="availDate" name="available" class="required date"/>
+								</div>
+								<div class="tableCell">
+									<label>SSN</label>
+								</div>
+								<div class="tableCell" id="ssn">
+									<input type="text" name="SSNFirst" maxlength="3" class="required digits errInline"/>
+									<label> - </label>
+									<input type="text" name="SSNMid" maxlength="2" class="required digits errInline"/>
+									<label> - </label>
+									<input type="text" name="SSNLast" maxlength="4" class="required digits"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Position</label>
+								</div>
+								<div class="tableCell">
+									<select name="position" id="position" >
+										<option value="sp">Select position </option>
+										<option value="af">Accounting/Finance </option>
+										<option value="ac">Actuarial </option>
+										<option value="ad">Administration </option>
+										<option value="au">Audit </option>
+										<option value="cm">Client Management </option>
+										<option value="cp">Compliance </option>
+										<option value="cs">Customer Service </option>
+										<option value="hr">Human Resources </option>
+										<option value="it">Information Technology </option>
+										<option value="in">Investments </option>
+										<option value="lg">Legal </option>
+										<option value="mg">Management </option>
+										<option value="oi">Operations (Insurance) </option>
+										<option value="pm">Project Management </option>
+										<option value="rm">Risk Management </option>
+										<option value="sm">Sales & Marketing</option>
+										<option value="or">Other</option>
+									</select>
+									<label id="positionError"> </label>
+								</div>
+								<div class="tableCell">
+									<label>Desired Salary</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" class="required number" />
+								</div>
+							</div>
+						</div>
+						<div class="table" id="citizenquestions">
+							<div class="tableRow">
+								<div class="tableCell first">
+									<label>Are you a U.S. Citizen?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="citizen" name="us" type="radio" value="y" class="required"/>
+									<label for="citizen">Yes</label>
+									<input id="foreign" name="us" type="radio" value="n" />
+									<label for="foreign">No</label>
+								</div>
+								<div class="tableCell citizenhide" id="authorizedcell">
+									<label>Are you authorized to work in the U.S.?</label>
+								</div>
+								<div class="tableCell buttonCell citizenhide">
+									<div>
+										<input id="canwork" name="workable" type="radio" value="y" />
+										<label for="canwork">Yes</label>
+										<input id="nowork" name="workable" type="radio" value="n" />
+										<label for="nowork">No</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table" id="prevwork">
+							<div class="tableRow">
+								<div class="tableCell first">
+									<label>Have you ever worked<br /> for this company?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="previously" name="prevwork" type="radio" value="y" class="required" />
+									<label for="previously">Yes</label>
+									<input id="never" name="prevwork" type="radio" value="n" />
+									<label for="never">No</label>
+								</div>
+								<div class="tableCell left" id="workbox">
+									<textarea id="workexplain" name="workexplain" class="static" placeholder="Briefly explain..." rows="2" cols="35"></textarea>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Have you ever been<br /> convicted of a felony?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="felon" name="felony" type="radio" value="y" class="required"/>
+									<label for="felon">Yes</label>
+									<input id="goodytwoshoes" name="felony" type="radio" value="n" />
+									<label for="goodytwoshoes">No</label>
+								</div>
+								<div class="tableCell left" id="felonyexplain">
+									<textarea  id="explainfelon" name="explainfelon" class="static" placeholder="Briefly explain..." rows="2" cols="35"></textarea>
+								</div>
+							</div>
+						</div><!-- end table -->
+					</form>
+						<button class="next" id="firstNext">Next</button>
+					</div><!--End tab 1 -->
+					<div id="tabs-2">
+					<form id="educationForm">
+						<h3>High School</h3><br />
+						<div class="table" id="highschool">
+							<div class="tableRow">
+								<div class="tableCell top">
+									<label>Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="hsName" type="text" class="required"/>
+								</div>
+								<div class="tableCell">
+									<label>Address</label>
+								</div>
+								<div class="tableCell">
+									<input name="hsaddress" type="text" class="required"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>From</label>
+								</div>
+								<div class="tableCell" id="hsStart">
+									<input type="text" class="schooldate required"  name="hsStart"/>
+								</div>
+								<div class="tableCell">
+									<label>To</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" class="schooldate required" id="hsEnd" name="hsEnd"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Did you<br /> graduate?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="hsgrad" name="hsgrad" type="radio" value="y" class = "required"/>
+									<label for="hsgrad">Yes</label>
+									<input id="slacker" name="hsgrad" type="radio" value="n" />
+									<label for="slacker">No</label>
+								</div>
+								<div class="tableCell nohs">
+									<label>Diploma</label>
+								</div>
+								<div class="tableCell nohs">
+									<input type="text" name="hsdiploma" class = "required"/>
+								</div>
+							</div>
+						</div><!-- end highschool table -->
+						<br /><h3 class="nohs">College</h3><br />
+						<div class="table nohs" id="college">
+							<div class="tableRow">
+								<div class="tableCell top">
+									<label>Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="collegeName" type="text" class="required"/>
+								</div>
+								<div class="tableCell">
+									<label>Address</label>
+								</div>
+								<div class="tableCell">
+									<input name="collegeaddress" type="text" class="required"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>From</label>
+								</div>
+								<div class="tableCell" id="collegeStart">
+									<input type="text" class="schooldate required"  name="collegeStart"/>
+								</div>
+								<div class="tableCell">
+									<label>To</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" class="schooldate required" id="collegeEnd" name="collegeEnd"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Did you<br /> graduate?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="collegegrad" name="clgrad" type="radio" value="y" class="required"/>
+									<label for="collegegrad">Yes</label>
+									<input id="collegefail" name="clgrad" type="radio" value="n" />
+									<label for="collegefail">No</label>
+								</div>
+								<div class="tableCell nocol">
+									<label>Degree</label>
+								</div>
+								<div class="tableCell nocol">
+									<input type="text" name="collegedegree" class="required"/>
+								</div>
+							</div>
+						</div><!-- end college table -->
+						<br /><h3 class="other">Other</h3><br />
+						<div class="table other" id="other">
+							<div class="tableRow">
+								<div class="tableCell top">
+									<label>Name</label>
+								</div>
+								<div class="tableCell">
+									<input name="otherName" type="text" />
+								</div>
+								<div class="tableCell">
+									<label>Address</label>
+								</div>
+								<div class="tableCell">
+									<input name="otheraddress" type="text" />
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>From</label>
+								</div>
+								<div class="tableCell" id="otherStart">
+									<input type="text" class="schooldate"  name="otherStart"/>
+								</div>
+								<div class="tableCell">
+									<label>To</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" class="schooldate" id="otherEnd" name="otherEnd"/>
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Did you<br /> graduate?</label>
+								</div>
+								<div class="tableCell buttonCell">
+									<input id="othergrad" name="otgrad" type="radio" value="y" />
+									<label for="othergrad">Yes</label>
+									<input id="otherfail" name="otgrad" type="radio" value="n" />
+									<label for="otherfail">No</label>
+								</div>
+								<div class="tableCell noother">
+									<label>Degree</label>
+								</div>
+								<div class="tableCell noother">
+									<input type="text" name="otherdegree" />
+								</div>
+							</div><br />
+						</div><!-- end other table -->
+					</form>
+						
+						<button id="addOther">Add Other Education</button><br /><br />
+						<button class="prev">Back</button>
+						<button id="secondNext" class="next">Next</button>
+						
+					</div><!-- End tab 2 -->
+					<div id="tabs-3">
+					<form id="referenceForm">
+						<h3>References</h3><br />
+						<h5 class="disclamer">Please provide up to three professional references.</h5><br />
+						<div id="ref1">
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Full Name</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="referenceName1" class="required" />
+									</div>
+									<div class="tableCell">
+										<label>Relationship</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="relationship1" class="required" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="company1" class="required" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!-- <input type="text" name="phone1" /> -->
+										<input type="text" name="relationship1AreaCode"class="required digits errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name = "relationship1First3" class="required digits errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name = "relationship1Last4" class="required digits" maxlength="4" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell referenceAddress">
+										<label>Address</label>
+									</div>
+									<div class="tableCell referenceAddressInput">
+										<input type="text" name="referenceAddress1" class="required" />
+									</div>
+								</div>
+							</div><br />
+						</div><!-- end reference 1 -->
+						
+						<div id="ref2">
+							<hr /><br />
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Full Name</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="referenceName2" />
+									</div>
+									<div class="tableCell">
+										<label>Relationship</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="relationship2" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="company2" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!--<input type="text" name="phone2" />-->
+										<input type="text" name="relationship2AreaCode" maxlength="3" class="digits errInline" />
+										<label> - </label>
+										<input type="text" name = "relationship2First3" maxlength="3" class="digits errInline" />
+										<label> - </label>
+										<input type="text" name = "relationship2Last4" maxlength="4" class="digits" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell referenceAddress">
+										<label>Address</label>
+									</div>
+									<div class="tableCell referenceAddressInput">
+										<input type="text" name="referenceAddress2" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<!--Empty space-->
+									</div>
+									<div class="tableCell removeReference">
+										<p id="removeReferenceText2">- Remove</p>
+									</div>
+								</div>
+							</div><br />
+						</div><!-- end reference 2 -->
+						
+						<div id="ref3">
+							<hr /><br />
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Full Name</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="referenceName3" />
+									</div>
+									<div class="tableCell">
+										<label>Relationship</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="relationship3" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="company3" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!--<input type="text" name="phone3" />-->
+										<input type="text" name="relationship3AreaCode" maxlength="3" class="digits errInline" />
+										<label> - </label>
+										<input type="text" name = "relationship2First3" maxlength="3" class="digits errInline" />
+										<label> - </label>
+										<input type="text" name = "relationship3Last4" maxlength="4" class="digits" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell referenceAddress">
+										<label>Address</label>
+									</div>
+									<div class="tableCell referenceAddressInput">
+										<input type="text" name="referenceAddress3" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<!--Empty space-->
+									</div>
+									<div class="tableCell removeReference">
+										<p id="removeReferenceText3">- Remove</p>
+									</div>
+								</div>
+							</div><br />
+						</div><!-- end reference 3 -->
+						
+						
+					</form>
+						<button id="addReference">Add Reference</button>
+						<br /><br /><hr /><hr />
+					<form id="employmentForm">	
+						<br /><h3>Previous Employment</h3><br />
+						<h5 class="disclamer">Please provide up to three previous work experiences.</h5><br />
+						<div id="emp1">
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyName1" class="required firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!-- <input type="text" name="companyPhone1" class="required" /> -->
+										<input type="text" name="company1AreaCode" class="required digits errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company1First3" class="required digits errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company1Last4" class="required digits" maxlength="4" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Address</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyAddress1" class="required firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Supervisor</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companySupervisor1" class="required" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empjob">
+										<label>Job Title</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="jobtitle1" class="required" />
+									</div>
+									<div class="tableCell">
+										<label>Starting Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="startSalary1" class="required salary number" />
+									</div>
+									<div class="tableCell">
+										<label>Ending Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="endSalary1" class="required salary number" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Responsibilities</label>
+									</div>
+									<div class="tableCell left" id="response1">
+										<input type="text" name="responsibilities1" class="required responsibilities" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empfrom">
+										<label>From</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate required"  name="employeeStart1"/>
+									</div>
+									<div class="tableCell">
+										<label>To</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate required" name="employeeEnd1" />
+									</div>
+									<div class="tableCell leavereason">
+										<label>Reason for Leaving</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="leaveReason1" class="required leavereasoninput" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empcontact">
+										<label>May we conatact your previous supervisor for a reference?</label>
+									</div>
+									<div class="tableCell buttonCell">
+									<div>
+										<input id="yescontact1" name="contact1" type="radio" value="y" class="required" />
+										<label for="yescontact1">Yes</label>
+										<input id="nocontact1" name="contact1" type="radio" value="n" />
+										<label for="nocontact1">No</label>
+									</div>
+								</div>
+								</div>
+							</div><br />
+						</div><!-- end emp1 -->
+						
+						<div id="emp2">
+						<hr /><br />
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyName2" class="firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!-- <input type="text" name="companyPhone2" class="required" />-->
+										<input type="text" name="company2AreaCode" class="errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company2First3" class="errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company2Last4" maxlength="4" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Address</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyAddress2" class="firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Supervisor</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companySupervisor2" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empjob">
+										<label>Job Title</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="jobtitle2"/>
+									</div>
+									<div class="tableCell">
+										<label>Starting Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="startSalary2" class="salary number" />
+									</div>
+									<div class="tableCell">
+										<label>Ending Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="endSalary2" class="salary number" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Responsibilities</label>
+									</div>
+									<div class="tableCell left" id="response2">
+										<input type="text" name="responsibilities2" class="responsibilities" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empfrom">
+										<label>From</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate"  name="employeeStart2"/>
+									</div>
+									<div class="tableCell">
+										<label>To</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate" name="employeeEnd2" />
+									</div>
+									<div class="tableCell leavereason">
+										<label>Reason for Leaving</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="leaveReason2" class="leavereasoninput" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empcontact">
+										<label>May we conatact your previous supervisor for a reference?</label>
+									</div>
+									<div class="tableCell buttonCell">
+									<div>
+										<input id="yescontact2" name="contact2" type="radio" value="y" />
+										<label for="yescontact2">Yes</label>
+										<input id="nocontact2" name="contact2" type="radio" value="n" />
+										<label for="nocontact2">No</label>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell removeEmp">
+										<p id="removeEmpText2">- Remove</p>
+									</div>
+								</div>
+							</div><br />
+						</div><!-- end emp2 -->
+						
+						<div id="emp3">
+						<hr /><br />
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Company</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyName3" class="firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Phone</label>
+									</div>
+									<div class="tableCell">
+										<!-- <input type="text" name="companyPhone2" class="required" />-->
+										<input type="text" name="company3AreaCode" class="errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company3First3" class="errInline" maxlength="3" />
+										<label> - </label>
+										<input type="text" name="company3Last4" maxlength="4" />
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Address</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companyAddress3" class="firstinput" />
+									</div>
+									<div class="tableCell">
+										<label>Supervisor</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="companySupervisor3" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empjob">
+										<label>Job Title</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="jobtitle3"/>
+									</div>
+									<div class="tableCell">
+										<label>Starting Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="startSalary3" class="salary number" />
+									</div>
+									<div class="tableCell">
+										<label>Ending Salary</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="endSalary3" class="salary number" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell">
+										<label>Responsibilities</label>
+									</div>
+									<div class="tableCell left" id="response3">
+										<input type="text" name="responsibilities3" class="responsibilities" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empfrom">
+										<label>From</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate"  name="employeeStart3"/>
+									</div>
+									<div class="tableCell">
+										<label>To</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" class="employeedate" name="employeeEnd3" />
+									</div>
+									<div class="tableCell leavereason">
+										<label>Reason for Leaving</label>
+									</div>
+									<div class="tableCell">
+										<input type="text" name="leaveReason3" class="leavereasoninput" />
+									</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell empcontact">
+										<label>May we conatact your previous supervisor for a reference?</label>
+									</div>
+									<div class="tableCell buttonCell">
+									<div>
+										<input id="yescontact3" name="contact3" type="radio" value="y" />
+										<label for="yescontact3">Yes</label>
+										<input id="nocontact3" name="contact3" type="radio" value="n" />
+										<label for="nocontact3">No</label>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="table">
+								<div class="tableRow">
+									<div class="tableCell removeEmp">
+										<p id="removeEmpText3">- Remove</p>
+									</div>
+								</div>
+							</div><br />
+						</div><!-- end emp3 -->
+						
+					</form>
+					<button id="addEmp">Add Employment</button>
+						<br /><br />
+						<button class="prev">Back</button>
+						<button id="thirdNext" class="next">Next</button>
+					</div><!-- End tab 3 -->
+					<div id="tabs-4">
+					<form id="militaryForm">
+						<div class="table">
+							<div class="tableRow">
+								<div class="tableCell">
+									<h4 class="inline">Have you served in the military?</h4>
+								</div>
+								<div class="tableCell">
+									<input id="served" name="military" type="radio" value="y" class="required"/>
+									<label for="served">Yes</label>
+									<input id="civie" name="military" type="radio" value="n" />
+									<label for="civie">No</label>
+								</div>
+							</div>
+						</div>
+						<br /><br />
+						<div class="table military" id="military">
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Branch</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="militaryBranch" />
+								</div>
+								<div class="tableCell">
+									<label>Rank at<br /> Discharge</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="militaryRank" />
+								</div>
+							</div>
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>From</label>
+								</div>
+								<div class="tableCell" id="militaryStart">
+									<input type="text" class="militarydate"  name="militaryStart"/>
+								</div>
+								<div class="tableCell">
+									<label>To</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" class="militarydate" id="militaryEnd" name="militaryEnd"/>
+								</div>
+							</div>
+						</div>
+						<div class="table military">
+							<div class="tableRow">
+								<div class="tableCell">
+									<label>Type of<br /> Discharge</label>
+								</div>
+								<div class="tableCell">
+									<input id="honorable" name="discharge" type="radio" value="h" />
+									<label for="honorable">Honorable</label>
+									<input id="oth" name="discharge" type="radio" value="oth" />
+									<label for="oth">Other</label>
+								</div>
+								<div class="tableCell left" id="dischargeExplain">
+									<textarea  id="expOfDischarge" class="static" placeholder="Briefly explain..." rows="2" cols="34"></textarea>
+								</div>
+							</div><br />
+						</div><!-- end military table -->
+					</form>
+						<button class="prev">Back</button>
+						<button id="fourthNext" class="next">Next</button>
+					</div><!-- end tab 4 -->
+					<div id="tabs-5">
+					<form id="sigForm">
+						<h3>Please read the disclaimer and provide an e-signature</h3><br />
+						<h5 class="disclamer">I certify that my answers are true and complete to the best of my knowledge.<br /><br />
+						If this application leads to employment, I understand that false or misleading information
+						in my application of interview my result in my release.</h5><br /><br />
+						<h4 class="inline">Signature</h4>
+						<input type="text" name="signature" class="required errInline" /><br /><br />
+					</form>
+						<button class="prev">Back</button>
+						<button id="submit">Submit</button>
+					</div><!-- end tab 5-->
+				</div>
+			
+			</div>
+		</div><!-- end page div -->
+		</div><!-- end container div -->
+		<footer>
+			<img id="topFooter" src="images/TopFooter2.png" />
+			<div id="footer">
+				<img id="bottomFooter" src="images/BottomFooter.png" />
+			</div>
+		</footer>
+	</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

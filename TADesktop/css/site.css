@@ -1,0 +1,350 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+	color: #fff;
+	background: #3e7cab;
+}
+
+body {
+	position: relative;
+	display: block;
+	font-family: arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-style: normal;
+    color: #000;
+	border-radius: 0px;
+    -webkit-text-size-adjust: 100%;
+}
+
+header{
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
+	font-family: "HelveticaNeueLight", helvetica, arial, sans-serif;
+    font-size: 35px;
+    padding: 0 0 0 30px;
+    margin: 0 32px 10px;
+	font-weight: normal;
+    line-height: 1.618;
+	box-sizing: border-box;
+	display: block;
+	-webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+p, label {
+	color: #666;
+}
+
+input[name="unit"], input[maxlength="5"] {
+	width: 50px;
+}
+
+input[maxlength="3"] {
+	width: 30px;
+}
+
+input[maxlength="4"] {
+	width: 40px;
+}
+
+input[maxlength="2"] {
+	width: 20px;
+}
+
+p.inline, h4.inline {
+	display: inline;
+}
+
+.table {
+    display: table;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tableCell {
+    display: table-cell;
+	padding: 5px;
+}
+
+.tableCell {
+	vertical-align: top;
+}
+
+.tableCell:nth-child(odd) {
+	text-align: right;
+}
+
+.buttonCell {
+	text-align: center;
+	width: 149px;
+}
+
+.first {
+	width: 200px;
+}
+
+.left {
+	text-align: left !important;
+}
+
+.top {
+	vertical-align:top;
+}
+
+.static {
+	resize: none;
+}
+
+.referenceAddress {
+	width: 81px;
+}
+
+.referenceAddressInput input{
+	width: 558px;
+}
+
+.removeReference, .removeEmp {
+	font-size: 60%;
+	text-align: right;
+	vertical-align: top;
+}
+
+.removeReference:hover, .removeEmp:hover {
+	cursor: pointer;
+}
+
+.removeEmp {
+	width: 780px;
+}
+
+.responsibilities {
+	width: 645px;
+}
+
+.next {
+	left: 643px;
+}
+
+.overflow {
+	height: 300px;
+}
+
+.ui-selectmenu-button.ui-button {
+	width: 185px;
+	height: 15px;
+	padding-top: 1px;
+}
+
+span.ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s {
+    margin-top: 3px;
+}
+
+.salary {
+	width: 100px;
+}
+
+.employeedate {
+	width: 150px;
+}
+
+.leavereason {
+	width: 100px;
+}
+
+.empjob, .empfrom {
+	width: 76px;
+}
+
+.empcontact {
+	width: 470px;
+	vertical-align: middle;
+}
+
+.leavereasoninput {
+	width: 226px;
+}
+
+.firstinput {
+	width: 365px;
+}
+
+label.error {
+	font-size: 60%;
+	display: block;
+}
+
+select + label.error {
+	display: block !important;
+}
+
+
+.errInline + label.error {
+	display: inline;
+}
+
+input.error, textarea.error, select.error {
+	border: 1px red solid;
+	background-color: #ffb3b3;
+}
+
+/*#removeReferenceText2:hover {
+	cursor: pointer;
+}
+
+#removeReferenceText3:hover {
+	cursor: pointer;
+}*/
+
+#tabs-2 label.ui-checkboxradio-label.ui-corner-all.ui-button.ui-widget.ui-checkboxradio-radio-label {
+	width: 41px;
+}
+
+#authorizedcell {
+	width: 164px;
+}
+
+#citizenquestions {
+	margin-top: 35px;
+}
+
+#citizenquestions .first {
+	vertical-align: middle;
+}
+
+#prevwork .tableRow {
+	height: 57px;
+}
+
+#firstNext {
+	left: 750px;
+}
+
+#never {
+	margin-left: 5em;
+}
+
+#state, #position {
+	width: 222px;
+}
+
+#topbar {
+	position: fixed;
+	top: 0px;
+	z-index: 99;
+	width: 100%;
+	background-color: black;
+}
+
+#footer {
+	width: 100%;
+	background-color: #e8e8e8;
+}
+
+#topbarimg, #secondheaderimg, #topFooter, #bottomFooter {
+	display: block;
+	margin:auto;
+}
+
+#container {
+	margin-top: 51px;
+}
+
+#intro, #page {
+	width: 1032px;
+	margin: auto;
+}
+
+#application {
+	padding: 0px 62px;
+}
+
+#choices {
+	margin-left: 89px;
+}
+
+#military .tableCell {
+	width: 80px;
+}
+
+.disclamer {
+	font-style: italic;
+}
+
+#submit {
+	left: 621.51px;
+}
+
+
+#stateError, #positionError {
+    font-size: 60%;
+    display: block;
+    color: #666;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
